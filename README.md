@@ -6,6 +6,8 @@
   * Whole site's content adapts itself to any window size (you can also resize the window)
 
 # My information
-  * Name: Asaf Salomon, Id: 204169155, Url: 
+  * Name: Asaf Salomon
+  * Id: 204169155
+  * Url: 
 
 <a><img src="https://d1e00ek4ebabms.cloudfront.net/production/a3e79cc7-d968-4f1a-b58d-ccfdc24b18d9.jpg"></a>
