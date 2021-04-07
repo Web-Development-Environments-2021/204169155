@@ -1,5 +1,3 @@
-/* border: 6px solid rgb(3, 0, 0); */
-
 /********** Body header and navbar ********/
 body {
   background: rgb(215, 251, 204);
@@ -182,10 +180,4 @@ iframe {
 .lastImg {
   width: 50vmin;
   height: 33vmin;
-}
-
-/** Q&A */
-.myQaTable {
-  /* width: 75vw;
-  text-align: center; */
 }
