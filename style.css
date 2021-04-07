@@ -1,7 +1,191 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+/* border: 6px solid rgb(3, 0, 0); */
+
+/********** Body header and navbar ********/
+body {
+  background: rgb(215, 251, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 251, 204, 1) 0%,
+    rgba(215, 234, 255, 1) 70%
+  );
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(55, 13, 89, 1);
+}
+
+#main-header {
+  color: rgba(55, 13, 89, 1);
+  font-size: 5vw;
+  margin-top: 0%;
+  margin-bottom: 0;
+}
+
+#navbar {
+  background-color: rgb(61, 61, 61);
+  position: fixed;
+  width: 90%;
+  top: 0%;
+  left: 5%;
+  z-index: 2;
+}
+
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  margin-left: 1%;
+  text-decoration: none;
+  font-size: calc(5px + 0.9vw);
+}
+
+#navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  line-height: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h4 {
+  line-height: 10px;
+  font-size: 1.5vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/********** Section headers (subheaders) ********/
+.section-header {
+  position: relative;
+  font-size: 1.9vw;
+  z-index: 1;
+  text-align: center;
+}
+
+.section-header:before,
+.section-header:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 43%;
+  height: 0.2vw;
+  content: "\a0";
+  background-color: rgb(35, 93, 23);
+}
+.section-header:before {
+  margin-left: -43%;
+  text-align: right;
+}
+
+/********** About me ********/
+.about-flex-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 2%;
+  margin-top: 3%;
+  width: 45%;
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/********** My Photos ********/
+.gallery {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(3, 33vw);
+  grid-template-rows: repeat(5, 40vw);
+  color: #222;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.gallery__img:hover {
+  transform: scale(1.03);
+}
+
+.gallery__item--5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.gallery__item--6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gallery__item--11 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/********** My Playlist ********/
+.video-flex-row {
+  display: flex;
+  width: 85%;
+  height: 45vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.video-web {
+  float: left;
+  width: 30vw;
+  height: 35vh;
+}
+
+.lastImg {
+  width: 50vmin;
+  height: 33vmin;
+}
+
+/** Q&A */
+.myQaTable {
+  /* width: 75vw;
+  text-align: center; */
 }
