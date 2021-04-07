@@ -295,13 +295,21 @@
             name="comment"
             id="mytextarea"
             rows="10"
-            cols="50"
+            {% comment %} cols="50" {% endcomment %}
             style="resize: none"
           >
           </textarea>
           <br />
           <input type="submit" value="Send" />
           <input type="reset" value="Reset" />
+          <select id="selectEmoji" onchange="addEmoji(this.value)">
+            <option> emojies </option>
+            <option value="&#128512"> &#128512 </option>
+            <option value=" &#128513"> &#128513 </option>
+            <option value=" &#128151"> &#128151 </option>
+            <option value=" &#128517"> &#128517 </option>
+            <option value=" &#128514"> &#128514 </option>
+          </select>
         </form>
         <br />
         <img src="./images/ringo12.jpg" class="lastImg" alt="Image 13" />
@@ -323,7 +331,15 @@
       </script>
 
       <script type="text/javascript">
-        $(".myIframe").css("width", $(window).height() + "px");
+        function addEmoji(emo){
+          let tmp = document.getElementById("mytextarea").value;
+          document.getElementById("mytextarea").value = tmp + " " + emo;
+          document.getElementById("selectEmoji").value = "emojies";
+        }
+      </script>
+
+      <script>
+
       </script>
     </center>
   </body>
