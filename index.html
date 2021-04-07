@@ -332,8 +332,7 @@
 
       <script type="text/javascript">
         function addEmoji(emo){
-          let tmp = document.getElementById("mytextarea").value;
-          document.getElementById("mytextarea").value = tmp + " " + emo;
+          document.getElementById("mytextarea").value += " " + emo;
           document.getElementById("selectEmoji").value = "emojies";
         }
       </script>
